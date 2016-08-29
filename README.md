@@ -8,25 +8,25 @@
 
 		ToastUtil toastUtil=new ToastUtil();
 		toastUtil.Short(MainActivity.this,"自定义message字体、背景色").setToastColor(Color.WHITE, getResources().getColor(R.color.colorAccent)).show();
-![icon](img/1.gif)
+![icon](screenshots/1.gif)
 
 2. 使用shape修改样式
 
 		toastUtil.Short(MainActivity.this,"自定义message字体颜色和背景").setToastBackground(Color.WHITE,R.drawable.toast_radius).show();
-![icon](img/2.gif)
+![icon](screenshots/2.gif)
 
 3. 给toast添加图标
 
 		 ImageView toastImage = new ImageView(getApplicationContext());
 		 toastImage.setImageResource(R.mipmap.ic_launcher);
 		 toastUtil.Short(MainActivity.this,"向Toast添加了一个ImageView").setToastBackground(Color.WHITE,R.drawable.toast_radius).addView(toastImage,0).show();
-![icon](img/3.gif)
+![icon](screenshots/3.gif)
 
 4. 自定义布局
 
 		 View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.image,null);
 		 new ToastUtil(MainActivity.this,view,Toast.LENGTH_SHORT).show();
-![icon](img/4.gif)
+![icon](screenshots/4.gif)
 
 
 ##如何使用
